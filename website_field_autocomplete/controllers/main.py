@@ -23,7 +23,7 @@ class Website(Website):
         fields = json.loads(kwargs.get("fields", "[]"))
         limit = kwargs.get("limit", None)
         res = self._get_autocomplete_data(model, domain, fields, limit)
-        return json.dumps(res.values())
+        return json.dumps(list(res.values()))
 
     def _get_autocomplete_data(self, model, domain, fields, limit=None):
         """Gets and returns raw record data
