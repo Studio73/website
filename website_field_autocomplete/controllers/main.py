@@ -17,7 +17,7 @@ class Website(Website):
         website=True,
     )
     def _get_field_autocomplete(self, model, **kwargs):
-        """ Return json autocomplete data """
+        """Return json autocomplete data"""
         domain = kwargs.get("domain", [])
         fields = kwargs.get("fields", [])
         limit = kwargs.get("limit", None)
