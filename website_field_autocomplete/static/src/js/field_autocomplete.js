@@ -5,7 +5,7 @@
 odoo.define("website_field_autocomplete.field_autocomplete", function (require) {
     "use strict";
 
-    var snippet_animation = require('website.content.snippets.animation');
+    var snippet_animation = require("website.content.snippets.animation");
 
     snippet_animation.registry.field_autocomplete = snippet_animation.Animation.extend({
         selector: ".js_website_autocomplete",
